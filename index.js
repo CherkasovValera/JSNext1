@@ -1,11 +1,11 @@
 "use strict";
 // 1. Найти по id, используя getElementById, элемент с id равным "super_link" и вывести этот элемент в консоль.
-// const elements = document.getElementById("super_link");
-// console.log(elements);
+const elements = document.getElementById("super_link");
+console.log(elements);
 // 2. Внутри всех элементов на странице, которые имеют класс "card-link", поменяйте текст внутри элемента на "ссылка".
-// const element = document.querySelectorAll('.card-link');    
-//       element.textContent = 'ссылка';
-//     console.log(element)
+const element = document.querySelectorAll('.card-link');    
+      element.textContent = 'ссылка';
+    console.log(element)
 
 // 3. Найти все элементы на странице с классом "card-link", которые лежат в элементе с классом "card-body" и вывести полученную коллекцию в консоль.
 const elem = document.querySelectorAll('.card-body .card-link');    
@@ -19,5 +19,8 @@ console.log(document.title)
 const rod = document.querySelector('.card-title').parentNode;    
       console.log(rod)
 // 7. Создайте тег p`, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
-
+const p_tag = document.createElement('p');
+p_tag.textContent = "Привет";
+document.querySelector('.card').prepend(p_tag);
 // 8. Удалите тег h6 на странице.
+document.querySelector('h6').remove;
